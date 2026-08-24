@@ -44,7 +44,7 @@ dim_seller ---- fact_orders ---- dim_product
 | **T-SQL** | Schema DDL, surrogate key design, indexing, and analytical queries |
 | **Power BI Desktop** | Connects directly to the database; auto-detects relationships from foreign keys for a native semantic model |
 
-**Why Azure SQL Database instead of Synapse serverless here:** Serverless SQL is excellent for querying files in place, but it doesn't support indexes, enforced foreign keys, or persistent tables. This project intentionally uses a real database to demonstrate schema design and load — a different (and complementary) skill from the query-in-place approach in my [batch pipeline project](../azure-ecommerce-analytics-pipeline).
+**Why Azure SQL Database instead of Synapse serverless here:** Serverless SQL is excellent for querying files in place, but it doesn't support indexes, enforced foreign keys, or persistent tables. This project intentionally uses a real database to demonstrate schema design and load — a different (and complementary) skill from the query-in-place approach in my [batch pipeline project](https://github.com/shijithpulikkal/azure-ecommerce-analytics-pipeline).
 
 ---
 
@@ -64,7 +64,7 @@ dim_seller ---- fact_orders ---- dim_product
 
 ## 📈 Dashboard
 
-![Dashboard Screenshot](./dashboard/screenshots/overview.png)
+![Dashboard Screenshot](./dashboard/screenshots/dashboard.gif)
 
 Built directly on the star schema in Power BI's **Import** mode, with relationships auto-detected from the database's foreign keys rather than manually joined in Power Query — a direct benefit of the dimensional model over flat-file querying.
 
@@ -118,11 +118,11 @@ azure-ecommerce-dimensional-warehouse/
 
 ## 🔗 Related Projects
 
-- **[Azure E-Commerce Analytics Pipeline](../azure-ecommerce-analytics-pipeline)** — batch ETL with ADF and Synapse serverless SQL
-- **[Azure E-Commerce Streaming Pipeline](../azure-ecommerce-streaming-pipeline)** — real-time ingestion with Event Hubs and Stream Analytics
+- **[Azure E-Commerce Analytics Pipeline](https://github.com/shijithpulikkal/azure-ecommerce-analytics-pipeline)** — batch ETL with ADF and Synapse serverless SQL
+- **[Azure E-Commerce Streaming Pipeline](https://github.com/shijithpulikkal/azure-ecommerce-streaming-pipeline)** — real-time ingestion with Event Hubs and Stream Analytics
 
 ---
 
-## 🧾 License
+
 
 <!-- Add if relevant -->
